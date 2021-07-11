@@ -1,0 +1,16 @@
+{
+  "name": "newsletter",
+  "version": "1.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amith Tr",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "util": "^0.12.4"
+  }
+}
