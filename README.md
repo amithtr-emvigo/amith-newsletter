@@ -3,6 +3,7 @@
  
 update the app configurations in config.json
 
+Import db dump from newsletter_db.sql file (inside the project folder)
 
 #Step 2: Run app
 
