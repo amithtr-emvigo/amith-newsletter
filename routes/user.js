@@ -5,6 +5,6 @@ const userController = require('../controllers/userController');
 
 router.post('/add-user', userController.addNewUser);
 
-
+router.post('/send-newsletter', userController.uploadNewsLetter);
 
 module.exports = router;

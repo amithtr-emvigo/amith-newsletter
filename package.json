@@ -1,16 +1,23 @@
 {
   "name": "newsletter",
-  "version": "1.1",
+  "version": "",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Amith Tr",
   "license": "ISC",
   "dependencies": {
+    "amqplib": "^0.8.0",
+    "bull": "^3.22.11",
+    "cron": "^1.8.2",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
     "mysql": "^2.18.1",
-    "util": "^0.12.4"
+    "nodemailer": "^6.6.2",
+    "util": "^0.12.4",
+    "xls-to-json-lc": "^0.3.4",
+    "xlsx-to-json-lc": "^0.5.0"
   }
 }

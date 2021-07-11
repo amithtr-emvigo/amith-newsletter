@@ -3,7 +3,6 @@ const util      = require('util');
 
 const config = require("../config.json");
 
-//console.log("JOSN::", config)
 
 var pool = mysql.createPool({
      host: config.mysql_host
