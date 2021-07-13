@@ -4,14 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "app" :"node app.js",
+    "consumer":"node consumer.js"
   },
   "author": "Amith Tr",
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.8.0",
-    "bull": "^3.22.11",
-    "cron": "^1.8.2",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.1",
     "mysql": "^2.18.1",

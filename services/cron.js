@@ -1,15 +1,17 @@
 var CronJob = require('cron').CronJob;
 const userService = require("./userService");
+const rabbitService = require("./rabbitService");
 const { pool } = require('../models/model');
 
 
 new CronJob('* * * * *',async function () {
     // every minute
    
-    let data= await userService.readDataFromQueue();
+   //  let data= await userService.readDataFromQueue();
+   // await rabbitService.readDataFromRabbitQueue()
 
-    console.log("cron reading data", data)
-    await userService.sendMail(data);
+   //  console.log("cron reading data", data)
+   //  await userService.sendMail(data);
 
 
 

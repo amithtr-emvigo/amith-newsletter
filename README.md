@@ -9,8 +9,13 @@ Import db dump from newsletter_db.sql file (inside the project folder)
 
 #Step 2: Run app
 
-npm install
-npm start
+npm run app
+
+
+npm run consumer 
+
+
+note: run this comments on seperate terminal
 
 
 #Step 3 

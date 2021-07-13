@@ -3,10 +3,11 @@
 "mysql_host": "127.0.0.1",
 "mysql_port": "3306",
 "mysql_user": "root",
-"mysql_password": "",
+"mysql_password": "emvigo",
 "mysql_database": "newsletter_db",
 "email_user" : "amithtr014@gmail.com",
-"email_password": ""
+"email_password": "Amt@9497054252",
+"amqp_url":"amqps://hvehiaxo:SJTy2uWIKT9s2q83tVaSz6c4XTZSiWYq@snake.rmq2.cloudamqp.com/hvehiaxo"
 
 
 }

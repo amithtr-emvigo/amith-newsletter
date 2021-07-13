@@ -3,7 +3,6 @@ const app               = express();
 const bodyParser        = require('body-parser');
 const fileupload = require("express-fileupload");
 
-require('./services/cron');
 
 const port = 3000;
 

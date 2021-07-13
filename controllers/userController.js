@@ -1,4 +1,5 @@
-var userService = require("../services/userService");
+const userService = require("../services/userService");
+const rabbitService = require("../services/rabbitService");
 const util          = require('util');
 var xlstojson       = require("xls-to-json-lc");
 xlstojson           = util.promisify(xlstojson);
@@ -50,7 +51,7 @@ module.exports.uploadNewsLetter = async (req, res) => {
         
           let json_data  = await exceltojson({input: uploadPath, output: null, lowerCaseHeaders:true})
 
-          await userService.addNewsletterToQueue(json_data);
+          await rabbitService.addNewsletterToRabbitQueue(json_data);
 
            msg = "news Letter Uploaded Successfully";
            return res.status(201).json({ success: true, message: msg, data: {} });
