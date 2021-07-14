@@ -51,7 +51,7 @@ module.exports.uploadNewsLetter = async (req, res) => {
         
           let json_data  = await exceltojson({input: uploadPath, output: null, lowerCaseHeaders:true})
 
-          await rabbitService.addNewsletterToRabbitQueue(json_data);
+          await rabbitService.addNewsletterToRabbitQueue(json_data,'newsletter_main_queue');
 
            msg = "news Letter Uploaded Successfully";
            return res.status(201).json({ success: true, message: msg, data: {} });

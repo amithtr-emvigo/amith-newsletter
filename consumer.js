@@ -1,6 +1,7 @@
 
 const userService = require("./services/userService");
 
+
 const config = require("./config.json");
 
 const q ='newsletter_main_queue';
@@ -19,6 +20,7 @@ amqplib.connect(q_url).then( function(conn) {
 
                 ok = ok.then(function(_qok) {
                   return ch.consume(q, async function(msg) {
+               
                     let data=  JSON.parse(msg.content.toString());
                     console.log(" [x] Received '%s'", data);
 
